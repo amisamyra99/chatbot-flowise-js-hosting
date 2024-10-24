@@ -27,7 +27,7 @@ Chatbot.init({
       showTitle: true,
       showAgentMessages: true,
       title: 'Intershop Documentation Chatbot',
-      titleAvatarSrc: "message.png",
+      titleAvatarSrc: " https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/message.png",
       welcomeMessage: 'Hello! Welcome to Intershop Documentation ChatBot',
       errorMessage: 'This is a custom error message',
       backgroundColor: '#ffffff',
@@ -40,7 +40,7 @@ Chatbot.init({
         backgroundColor: '#f7f8ff',
         textColor: '#303235',
         showAvatar: true,
-        avatarSrc: 'https://github.com/amisamyra99/FlowiseChatEmbed/blob/main/src/assets/images/message.png',
+        avatarSrc: 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/message.png',
       },
       userMessage: {
         backgroundColor: '#008e87',
