@@ -28,12 +28,13 @@ Chatbot.init({
       showAgentMessages: true,
       title: 'Intershop Documentation Chatbot',
       titleAvatarSrc: " https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png",
+      
       welcomeMessage: 'Hello! Welcome to Intershop Documentation ChatBot',
       errorMessage: 'It seems that we are encountering a problem.',
       backgroundColor: '#ffffff',
       height: 700,
       width: 400,
-      fontSize: 12,
+      fontSize: 15,
       clearChatOnReload: false,
       sourceDocsTitle: 'Sources:',
       botMessage: {
@@ -41,6 +42,8 @@ Chatbot.init({
         textColor: '#303235',
         showAvatar: true,
         avatarSrc: 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png',
+        size:
+        
       },
       userMessage: {
         backgroundColor: '#008e87',
