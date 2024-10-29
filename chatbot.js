@@ -41,7 +41,7 @@ Chatbot.init({
         backgroundColor: '#f7f8ff',
         textColor: '#303235',
         showAvatar: true,
-        avatarSrc: 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png',
+        //avatarSrc: 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png',
         size:
         
       },
@@ -49,7 +49,7 @@ Chatbot.init({
         backgroundColor: '#008e87',
         textColor: '#ffffff',
         showAvatar: true,
-        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png',
+        //avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png',
       },
       textInput: {
         placeholder: 'Type your question',
