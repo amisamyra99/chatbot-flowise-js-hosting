@@ -42,8 +42,6 @@ Chatbot.init({
         textColor: '#303235',
         showAvatar: true,
         //avatarSrc: 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png',
-        size:
-        
       },
       userMessage: {
         backgroundColor: '#008e87',
