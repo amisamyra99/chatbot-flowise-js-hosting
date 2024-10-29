@@ -34,7 +34,7 @@ Chatbot.init({
       backgroundColor: '#ffffff',
       height: 700,
       width: 400,
-      fontSize: 15,
+      fontSize: 16,
       clearChatOnReload: false,
       sourceDocsTitle: 'Sources:',
       botMessage: {
