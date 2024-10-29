@@ -5,7 +5,7 @@ Chatbot.init({
   chatflowConfig: {
     vars: {
       currentUrl: window.location.href,
-      topic: "cec"
+      topic: "iap"
     }
   },
   observersConfig: {},
