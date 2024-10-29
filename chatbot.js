@@ -40,13 +40,13 @@ Chatbot.init({
       botMessage: {
         backgroundColor: '#f7f8ff',
         textColor: '#303235',
-        showAvatar: true,
+       // showAvatar: true,
         //avatarSrc: 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png',
       },
       userMessage: {
         backgroundColor: '#008e87',
         textColor: '#ffffff',
-        showAvatar: true,
+        //showAvatar: true,
         //avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png',
       },
       textInput: {
