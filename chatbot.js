@@ -7,7 +7,7 @@ Chatbot.init({
       currentUrl: window.location.href,
       service: (()=>{
         // Access the current URL from the vars
-        const currentUrl = 'https://docs.intershop.com/iap/olh/cec/en/';
+       // const currentUrl = 'https://docs.intershop.com/iap/olh/cec/en/';
 
         // Function to extract the service identifier
         function getServiceFromUrl(url) {
@@ -19,7 +19,7 @@ Chatbot.init({
         }
 
         // Execute the function to extract the service
-        return getServiceFromUrl(currentUrl);
+        return getServiceFromUrl(this.currentUrl);
     })()
     }
   },
@@ -44,7 +44,7 @@ Chatbot.init({
       title: 'Intershop Documentation Chatbot',
       titleAvatarSrc: " https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png",
       
-      welcomeMessage: 'Hello! Welcome to the Intershop Documentation Ai assistant! How can I assist you today? Currently, I  set up to support ICM latest topics, so feel free to ask any questions related to ICM and its sub-products, OMA and SMC.',
+      welcomeMessage: 'Hello! Welcome to the Intershop Documentation Ai assistant! How can I assist you today? Currently, I  set up to support ICM latest topics, so feel free to ask any questions related to ICM and its sub-products, OMA and SMC.' +this.service,
       errorMessage: 'It seems that we are encountering a problem.',
       backgroundColor: '#ffffff',
       height: 700,
