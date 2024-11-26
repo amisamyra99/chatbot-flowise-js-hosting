@@ -1,11 +1,26 @@
 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 Chatbot.init({
-  chatflowid: "bf4d560b-9691-48e4-85ac-7e87d85d2500",
-  apiHost: "http://localhost:3000",
+  chatflowid: "6a045bf3-f937-4f00-b26d-3bd269192132",
+  apiHost: "https://ish-flowise-app.azurewebsites.net",
   chatflowConfig: {
     vars: {
       currentUrl: window.location.href,
-      service: "iap"
+      service: (()=>{
+        // Access the current URL from the vars
+        const currentUrl = 'https://docs.intershop.com/iap/olh/cec/en/';
+
+        // Function to extract the service identifier
+        function getServiceFromUrl(url) {
+            // Match the pattern after the domain or path
+            const match = url.match(/(?:docs\.intershop\.com|file:\/\/\/D:\/documentation-online-help-icm\/src)\/(\w+)/);
+            console.log(match)
+            // Return the matched group if found; otherwise, default to 'icm'
+            return match ? match[1] : 'icm';
+        }
+
+        // Execute the function to extract the service
+        return getServiceFromUrl(currentUrl);
+    })()
     }
   },
   observersConfig: {},
@@ -29,7 +44,7 @@ Chatbot.init({
       title: 'Intershop Documentation Chatbot',
       titleAvatarSrc: " https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png",
       
-      welcomeMessage: 'Hello! Welcome to Intershop Documentation ChatBot',
+      welcomeMessage: 'Hello! Welcome to the Intershop Documentation Ai assistant! How can I assist you today? Currently, I  set up to support ICM latest topics, so feel free to ask any questions related to ICM and its sub-products, OMA and SMC.',
       errorMessage: 'It seems that we are encountering a problem.',
       backgroundColor: '#ffffff',
       height: 700,
@@ -57,8 +72,8 @@ Chatbot.init({
         maxChars: 50,
         maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
         autoFocus: true,
-        sendMessageSound: true,
-        receiveMessageSound: true,
+        sendMessageSound: false,
+        receiveMessageSound: false,
       },
       footer: {
         textColor: '#303235',
