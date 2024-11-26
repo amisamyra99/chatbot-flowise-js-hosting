@@ -45,7 +45,7 @@ Chatbot.init({
       title: 'Intershop Documentation Chatbot',
       titleAvatarSrc: " https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png",
       
-      welcomeMessage: 'Hello! Welcome to the Intershop Documentation Ai assistant! How can I assist you today? Currently, I  set up to support ICM latest topics, so feel free to ask any questions related to ICM and its sub-products, OMA and SMC.' +this.service,
+      welcomeMessage: 'Hello! Welcome to the Intershop Documentation Ai assistant! How can I assist you today? Currently, I  set up to support ICM latest topics, so feel free to ask any questions related to ICM and its sub-products, OMA and SMC.',
       errorMessage: 'It seems that we are encountering a problem.',
       backgroundColor: '#ffffff',
       height: 700,
