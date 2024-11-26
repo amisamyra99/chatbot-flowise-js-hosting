@@ -18,8 +18,9 @@ Chatbot.init({
             return match ? match[1] : 'icm';
         }
 
+          const url=window.location.href;
         // Execute the function to extract the service
-        return getServiceFromUrl(this.currentUrl);
+        return getServiceFromUrl(url);
     })()
     }
   },
