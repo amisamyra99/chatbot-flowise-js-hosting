@@ -12,7 +12,9 @@ Chatbot.init({
         // Function to extract the service identifier
         function getServiceFromUrl(url) {
             // Match the pattern after the domain or path
-            const match = url.match(/(?:docs\.intershop\.com|file:\/\/\/D:\/(documentation-online-help-icm|documentation-online-help-iap)\/src)\/(\w+)/);
+            const regex = /(?:docs\.intershop\.com|file:\/\/\/D:\/documentation-online-help-(icm|iap|iom)\/src)/;
+            const regex2=/(?:docs\.intershop\.com|file:\/\/\/D:\/(documentation-online-help-icm|documentation-online-help-iap)\/src)\/(\w+)/;
+            const match = url.match(regex);
             console.log(match)
             // Return the matched group if found; otherwise, default to 'icm'
             return match ? match[1] : 'icm';
