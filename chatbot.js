@@ -1,6 +1,6 @@
 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 Chatbot.init({
-  chatflowid: "6a045bf3-f937-4f00-b26d-3bd269192132",
+  chatflowid: "6fcb9478-23fd-49aa-b729-e2a5e3936549",
   apiHost: "https://ish-flowise-app.azurewebsites.net",
   chatflowConfig: {
     vars: {
