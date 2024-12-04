@@ -1,4 +1,4 @@
-import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+import Chatbot from "https://cdn.jsdelivr.net/gh/intershop/ai-flowise-chat-embed@website/docs-intershop/dist/web.js"
 Chatbot.init({
   chatflowid: "6fcb9478-23fd-49aa-b729-e2a5e3936549",
   apiHost: "https://ish-flowise-app.azurewebsites.net",
