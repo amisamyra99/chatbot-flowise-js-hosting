@@ -1,4 +1,4 @@
-import Chatbot from 'https://cdn.jsdelivr.net/gh/intershop/ai-flowise-chat-embed@website/docs-intershop/dist/web.js';
+import Chatbot from 'https://amisamyra99.github.io/chatbot-flowise-js-hosting/web.js';
 //import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 //import chatWindow from 'http://localhost:5678/web.js'
 const welcome = {
