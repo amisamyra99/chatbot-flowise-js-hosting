@@ -1,11 +1,13 @@
-//import Chatbot from 'https://cdn.jsdelivr.net/gh/intershop/ai-flowise-chat-embed@website/docs-intershop/dist/web.js';
-import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+import Chatbot from 'https://cdn.jsdelivr.net/gh/intershop/ai-flowise-chat-embed@website/docs-intershop/dist/web.js';
+//import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+//import chatWindow from 'http://localhost:5678/web.js'
 const welcome = {
   en: "Hi! Need help with Intershop documentation? I'm the AI assistant specializing in the latest versions of ICM, IOM, CEC, IAC, SMC, and OMA. Feel free to ask me your questions.",
   fr: "Bonjour ! Besoin d'aide avec la documentation Intershop ? Je suis l'assistant IA spécialisé dans les dernières versions d'ICM, IOM, CEC, IAC, SMC et OMA. N'hésitez pas à me poser vos questions.",
-  de: 'Hallo! Brauchen Sie Hilfe mit der Intershop-Dokumentation? Ich bin der KI-Assistent, der auf die neuesten Versionen von ICM, IOM, CEC, IAC, SMC und OMA spezialisiert ist. Stellen Sie mir gerne Ihre Fragen.',
+  de: 'Hallo! Brauchen Sie Hilfe mit der Intershop-Dokumentation? Ich bin der AI-Assistent, der auf die neuesten Versionen von ICM, IOM, CEC, IAC, SMC und OMA spezialisiert ist. Stellen Sie mir gerne Ihre Fragen.',
 };
 var welcomeMessage = welcome.en;
+
 Chatbot.init({
   chatflowid: '8fba968e-f8ed-4401-8a9f-57eaa5f45535',
   apiHost: 'https://ish-flowise-app.azurewebsites.net',
@@ -20,7 +22,7 @@ Chatbot.init({
           return match ? (validLangCodes.includes(match[1]) ? match[1] : null) : null;
         }
         const url = window.location.href;
-        var extracted_lang = getLangFromUrl(url) || 'de';
+        var extracted_lang = getLangFromUrl(url) || 'en';
         console.log(extracted_lang);
         welcomeMessage = welcome[extracted_lang] || welcome.en; // Default to English if the language key is missing.
       })(),
@@ -65,7 +67,7 @@ Chatbot.init({
     chatWindow: {
       showTitle: true,
       showAgentMessages: true,
-      title: 'Intershop Documentation Chatbot',
+      title: 'Intershop Documentation Copilot',
       //titleAvatarSrc: " https://amisamyra99.github.io/chatbot-flowise-js-hosting/images/bot24.png",
 
       welcomeMessage: welcomeMessage,
@@ -73,8 +75,8 @@ Chatbot.init({
       errorMessage: 'It seems that we are encountering a problem.',
       backgroundColor: '#ffffff',
       //set a pixel value
-      height: 700,
-      width: 600,
+     //height: 1000,
+     //width: 600,
       fontSize: 16,
       clearChatOnReload: false,
       sourceDocsTitle: 'Sources:',
@@ -103,12 +105,14 @@ Chatbot.init({
       },
       feedback: {
         color: '#303235',
-        backgroundColor: '#008e87',
+        backgroundColor: '#ffffff',
+        buttonColor: '#ffffff'
+
       },
       footer: {
         textColor: '#303235',
         text: 'Powered by',
-        company: 'Intershop Gmbh',
+        company: 'Intershop',
         companyLink: 'https://docs.intershop.com/index.php',
       },
     },
